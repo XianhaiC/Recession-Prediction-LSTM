@@ -12,18 +12,18 @@
 ## Usage
 
   Before training a model, first format the csv files containing the data
-  '''
+  ```
   data_x, data_y = parse_data()
-  '''
+  ```
 
   Then create the LSTM model with the specified parameters
-  '''
+  ```
   pred = Prediction(300, 20, 20, 0.2, 3, 12, .5, [0, 1, 6], False, data_x, data_y,)
-  '''
+  ```
 
   Train the LSTM and have it display the the results afterwards
-  '''
+  ```
   pred.train_LSTM()
   pred.evaluate_LSTM()
   pred.display_results()
-  '''
+  ```
